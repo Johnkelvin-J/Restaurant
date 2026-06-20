@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namma Chennai Kitchen | Authentic South Indian Tiffin & Curries</title>
+    <meta name="description" content="Savor authentic Chennai-style South Indian delicacies at Namma Chennai Kitchen. From crispy Ghee Roast Dosa to Madras Meen Kuzhambu and Degree Filter Coffee.">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- HEADER / NAVIGATION -->
+    <header id="header">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-icon">🌴</span> Namma Chennai <span>Kitchen</span>
+            </a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#" class="nav-link active" data-sec="home">Home</a></li>
+                <li><a href="#about" class="nav-link" data-sec="about">Our Story</a></li>
+                <li><a href="#menu" class="nav-link" data-sec="menu">Menu</a></li>
+                <li><a href="#testimonials" class="nav-link" data-sec="testimonials">Reviews</a></li>
+                <li><a href="#contact" class="nav-link" data-sec="contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="cart-btn" id="cart-toggle-btn" aria-label="View Cart">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="cart-badge" id="cart-badge-count">0</span>
+                </button>
+                <button class="menu-toggle" id="menu-toggle-btn" aria-label="Toggle Navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SLIDER SECTION -->
+    <section class="hero" id="home">
+        <div class="slider-container">
+            <!-- Slide 1 -->
+            <div class="slide active">
+                <img src="assets/dosa.png" alt="Ghee Roast Dosa" class="slide-bg">
+                <div class="slide-content">
+                    <h3>All-Day Classics</h3>
+                    <h1>Jasmine-Soft Idlis & Crispy Dosas</h1>
+                    <p>Authentic tiffin fermented recipes roasted in pure golden ghee. Served piping hot with traditional sambar and a triad of fresh chutneys.</p>
+                    <div class="slide-actions">
+                        <a href="#menu" class="btn btn-primary">Explore Menu <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="#about" class="btn btn-outline-white">Our Story</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="slide">
+                <img src="assets/biryani.png" alt="Ambur Star Mutton Biryani" class="slide-bg">
+                <div class="slide-content">
+                    <h3>Namma Chennai Special</h3>
+                    <h1>Ambur Star Mutton Biryani</h1>
+                    <p>Fragrant Seeraga Samba rice and fork-tender mutton slow-cooked over wood fire with traditional spices. An authentic taste of heritage.</p>
+                    <div class="slide-actions">
+                        <a href="#menu" class="btn btn-primary">Order Now <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="#about" class="btn btn-outline-white">Our Story</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="slide">
+                <img src="assets/coffee.png" alt="Degree Filter Coffee" class="slide-bg">
+                <div class="slide-content">
+                    <h3>Brewed to Perfection</h3>
+                    <h1>Degree Filter Coffee</h1>
+                    <p>Rich, frothy traditional coffee brewed in a brass filter and poured from heights to create the perfect velvet texture. Served in a traditional dabara set.</p>
+                    <div class="slide-actions">
+                        <a href="#menu" class="btn btn-primary">View Drinks <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="#about" class="btn btn-outline-white">Watch Brew</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Controls -->
+        <button class="slider-btn slider-btn-prev" id="slider-prev" aria-label="Previous Slide">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button class="slider-btn slider-btn-next" id="slider-next" aria-label="Next Slide">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+
+        <div class="slider-dots" id="slider-dots">
+            <span class="slider-dot active" data-index="0"></span>
+            <span class="slider-dot" data-index="1"></span>
+            <span class="slider-dot" data-index="2"></span>
+        </div>
+    </section>
+
+    <!-- OUR STORY & INTERACTIVE BREWER -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text reveal reveal-left">
+                    <h3>Authentic Flavors of the Coromandel Coast</h3>
+                    <p>At Namma Chennai Kitchen, we bring the lively streets of Marina Beach and the rich heritage of Mylapore straight to your table. Our recipes have been passed down through generations, utilizing stone-ground batters, hand-pounded masalas, and local Tamil culinary techniques.</p>
+                    <p>Every tiffin is served with sambar and freshly churned chutneys. Every meal is an celebration of spice, texture, and hospitality. Welcome to a true feast of Madras.</p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <div class="highlight-icon"><i class="fa-solid fa-mortar-pestle"></i></div>
+                            <div>
+                                <h4 class="highlight-title">House-Ground Spices</h4>
+                                <p class="highlight-desc">No pre-made powders. We roast and grind spices daily.</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon"><i class="fa-solid fa-seedling"></i></div>
+                            <div>
+                                <h4 class="highlight-title">100% Pure Ghee</h4>
+                                <p class="highlight-desc">Only standard, farm-fresh ghee is drizzled on our dosas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Coffee Brewing interactive widget -->
+                <div class="about-widget reveal reveal-right">
+                    <div class="coffee-widget-card">
+                        <h4 class="coffee-widget-title">Mylapore Kaapi Experience</h4>
+                        <p class="coffee-widget-subtitle">Click below to brew a fresh, frothy cup of Degree Filter Coffee!</p>
+                        <div class="coffee-brewing-stage" id="coffee-stage">
+                            <!-- Steam lines -->
+                            <div class="steam-container" id="steam-container">
+                                <span class="steam-line"></span>
+                                <span class="steam-line"></span>
+                                <span class="steam-line"></span>
+                            </div>
+                            <!-- Pouring stream -->
+                            <div class="coffee-stream" id="coffee-stream"></div>
+                            <!-- Cup & Dabara -->
+                            <div class="dabara-set">
+                                <div class="coffee-cup">
+                                    <div class="liquid" id="coffee-liquid"></div>
+                                    <div class="froth" id="coffee-froth"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="brew-btn" id="brew-coffee-btn">
+                            <i class="fa-solid fa-mug-hot"></i> Brew Fresh Coffee
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INTERACTIVE MENU SECTION -->
+    <section class="menu" id="menu">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Our Menu</h2>
+                <p>Explore Chennai's finest street food, crispy tiffin classics, aromatic slow-cooked curries, and rich traditional desserts.</p>
+            </div>
+
+            <!-- Search and category filters -->
+            <div class="menu-controls reveal">
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" id="menu-search-input" placeholder="Search menu dishes (e.g. Dosa, Biryani)...">
+                </div>
+                <ul class="menu-tabs">
+                    <li><button class="tab-btn active" data-category="all">All Dishes</button></li>
+                    <li><button class="tab-btn" data-category="starters">Aarambam (Starters)</button></li>
+                    <li><button class="tab-btn" data-category="tiffin">Tiffin Center</button></li>
+                    <li><button class="tab-btn" data-category="mains">Main Course</button></li>
+                    <li><button class="tab-btn" data-category="rice">Rice & Breads</button></li>
+                    <li><button class="tab-btn" data-category="desserts">Desserts (Inippu)</button></li>
+                    <li><button class="tab-btn" data-category="beverages">Beverages</button></li>
+                </ul>
+            </div>
+
+            <!-- Menu List Container -->
+            <div class="menu-list-container" id="menu-list-container">
+                
+                <!-- --- SOUPS & STARTERS --- -->
+                <div class="menu-list-item reveal" data-item-id="starter-mulligatawny-veg" data-category="starters" data-name="mulligatawny soup veg" data-price="120">
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <span class="indicator-dot veg" title="Vegetarian"></span>
+                            <h4 class="menu-item-title">Mulligatawny Soup (Veg)</h4>
+                            <span class="menu-item-leader"></span>
+                            <span class="menu-item-price">₹120</span>
+                        </div>
+                        <p class="menu-item-desc">A rich, pepper-spiced lentil broth finished with coconut milk and aromatic spices.</p>
+                    </div>
+                    <div class="menu-item-actions">
+                        <div class="spicy-rating">
+                            <span>Spicy</span>
+                            <i class="fa-solid fa-pepper-hot"></i>
+                            <i class="fa-solid fa-pepper-hot"></i>
+                        </div>
+                        <button class="add-to-cart-btn-list" aria-label="Add to Order" onclick="addToCart('starter-mulligatawny-veg', 'Mulligatawny Soup (Veg)', 120)">
+                            Add <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="menu-list-item reveal" data-item-id="starter-mulligatawny-chicken" data-category="starters" data-name="mulligatawny soup chicken" data-price="150">
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <span class="indicator-dot nonveg" title="Non-Vegetarian"></span>
+                            <h4 class="menu-item-title">Mulligatawny Soup (Chicken)</h4>
+                            <span class="menu-item-leader"></span>
+                            <span class="menu-item-price">₹150</span>
+                        </div>
+                        <p class="menu-item-desc">Warm pepper-spiced lentil broth slow-simmered with fresh chicken cubes and light coconut milk.</p>
+                    </div>
+                    <div class="menu-item-actions">
+                        <div class="spicy-rating">
+                            <span>Spicy</span>
+                            <i class="fa-solid fa-pepper-hot"></i>
+                            <i class="fa-solid fa-pepper-hot"></i>
+                        </div>
+                        <button class="add-to-cart-btn-list" aria-label="Add to Order" onclick="addToCart('starter-mulligatawny-chicken', 'Mulligatawny Soup (Chicken)', 150)">
+                            Add <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="menu-list-item reveal" data-item-id="starter-sundal" data-category="starters" data-name="marina beach sundal" data-price="90">
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <span class="indicator-dot veg" title="Vegetarian"></span>
+                            <h4 class="menu-item-title">Marina Beach Sundal</h4>
+                            <span class="menu-item-leader"></span>
+                            <span class="menu-item-price">₹90</span>
+                        </div>
+                        <p class="menu-item-desc">Traditional white chickpeas tossed with crackling mustard seeds, curry leaves, ginger, and fresh coconut shavings.</p>
+                    </div>
+                    <div class="menu-item-actions">
+                        <div class="spicy-rating">
+                            <span>Mild</span>
+                            <i class="fa-solid fa-pepper-hot"></i>
+                        </div>
+                        <button class="add-to-cart-btn-list" aria-label="Add to Order" onclick="addToCart('starter-sundal', 'Marina Beach Sundal', 90)">
+                            Add <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="menu-list-item reveal" data-item-id="starter-paniyaram-sweet" data-category="starters" data-name="sweet kuzhi paniyaram" data-price="110">
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <span class="indicator-dot veg" title="Vegetarian"></span>
+                            <h4 class="menu-item-title">Sweet Kuzhi Paniyaram</h4>
+                            <span class="menu-item-leader"></span>
+                            <span class="menu-item-price">₹110</span>
+                        </div>
+                        <p class="menu-item-desc">Pan-fried dumplings made of fermented rice, lentils, sweet organic jaggery, and green cardamom.</p>
+                    </div>
+                    <div class="menu-item-actions">
+                        <div class="spicy-rating">
+                            <span>Sweet</span>
+                            <i class="fa-solid fa-cookie" style="color:var(--secondary)"></i>
+                        </div>
+                        <button class="add-to-cart-btn-list" aria-label="Add to Order" onclick="addToCart('starter-paniyaram-sweet', 'Sweet Kuzhi Paniyaram', 110)">
+                            Add <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="menu-list-item reveal" data-item-id="starter-paniyaram-savory" data-category="starters" data-name="savory kuzhi paniyaram" data-price="110">
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <span class="indicator-dot veg" title="Vegetarian"></span>
+                            <h4 class="menu-item-title">Savory Kuzhi Paniyaram</h4>
+                            <span class="menu-item-leader"></span>
+                            <span class="menu-item-price">₹110</span>
+                        </div>
+                        <p class="menu-item-desc">Rice & lentil dumplings fried with green chilies, minced onions, mustard seeds, and fresh curry leaves.</p>
+                    </div>
+                    <div class="menu-item-actions">
+                        <div class="spicy-rating">
+                            <span>Mild</span>
+                            <i class="fa-solid fa-pepper-hot"></i>
+                        </div>
+                        <button class="add-to-cart-btn-list" aria-label="Add to Order" onclick="addToCart('starter-paniyaram-savory', 'Savory Kuzhi Paniyaram', 110)">
+                            Add <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="menu-list-item reveal" data-item-id="starter-chicken65" data-category="starters" data-name="original chicken 65" data-price="220">
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <span class="indicator-dot nonveg" title="Non-Vegetarian"></span>
+                            <h4 class="menu-item-title">Original Chicken 65</h4>
+                            <span class="menu-item-leader"></span>
+                            <span class="menu-item-price">₹220</span>
+                        </div>
+                        <p class="menu-item-desc">The classic spicy, deep-fried chicken cubes marinated in ginger, garlic, and red chilies originating from Chennai.</p>
+                    </div>
+                    <div class="menu-item-actions">
+                        <div class="spicy-rating">
+                            <span>Very Spicy</span>
+                            <i class="fa-solid fa-pepper-hot"></i>
+                            <i class="fa-solid fa-pepper-hot"></i>
+                            <i class="fa-solid fa-pepper-hot"></i>
+                        </div>
+                        <button class="add-to-cart-btn-list" aria-label="Add to Order" onclick="addToCart('starter-chicken65', 'Original Chicken 65', 220)">
+                            Add <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="menu-list-item reveal" data-item-id="starter-prawn-fry" data-category="starters" data-name="kariveppilai prawn fry" data-price="280">
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <span class="indicator-dot nonveg" title="Non-Vegetarian"></span>
+                            <h4 class="menu-item-title">Kariveppilai Prawn Fry</h4>
+                            <span class="menu-item-leader"></span>
+                            <span class="menu-item-price">₹280</span>
+                        </div>
+                        <p class="menu-item-desc">Fresh ocean prawns marinated in a fragrant, coarse curry leaf and freshly crushed black pepper paste.</p>
+                    </div>
+                    <div class="menu-item-actions">
+                        <div class="spicy-rating">
+                            <span>Spicy</span>
+                            <i class="fa-solid fa-pepper-hot"></i>
+                            <i class="fa-solid fa-pepper-hot"></i>
+                        </div>
+                        <button class="add-to-cart-btn-list" aria-label="Add to Order" onclick="addToCart('starter-prawn-fry', 'Kariveppilai Prawn Fry', 280)">
+                            Add <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- --- TIFFIN CENTER --- -->
+                <div class="menu-list-item reveal" data-item-id="tiffin-idli" data-category="tiffin" data-name="malli poo idli" data-price="80">
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <span class="indicator-dot veg" title="Vegetarian"></span>
+                            <h4 class="menu-item-title">Malli Poo Idli (3 pcs)</h4>
+                            <span class="menu-item-leader"></span>
+                            <span class="menu-item-price">₹80</span>
+                        </div>
+                        <p class="menu-item-desc">Steamed jasmine-soft rice and lentil cakes. Served with sambar, tomato, mint and coconut chutneys.</p>
+                    </div>
+                    <div class="menu-item-actions">
+                        <div class="spicy-rating">
+                            <span>Mild</span>
+                            <i class="fa-solid fa-pepper-hot"></i>
+                        </div>
+                        <button class="add-to-cart-btn-list" aria-label="Add to Order" onclick="addToCart('tiffin-idli', 'Malli Poo Idli', 80)">
+                            Add <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="menu-list-item reveal" data-item-id="tiffin-ghee-dosa" data-category="tiffin" data-name="ghee roast dosa" data-price="120">
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <span class="indicator-dot veg" title="Vegetarian"></span>
+                            <h4 class="menu-item-title">Ghee Roast Dosa</h4>
+                            <span class="menu-item-leader"></span>
+                            <span class="menu-item-price">₹120</span>
+                        </div>
+                        <p class="menu-item-desc">Crispy, paper-thin golden crepe roasted with premium pure clarified butter (ghee) on an iron griddle.</p>
+                    </div>
+                    <div class="menu-item-actions">
+                        <div class="spicy-rating">
+                            <span>Mild</span>
+                            <i class="fa-solid fa-pepper-hot"></i>
+                        </div>
+                        <button class="add-to-cart-btn-list" aria-label="Add to Order" onclick="addToCart('tiffin-ghee-dosa', 'Ghee Roast Dosa', 120)">
+                            Add <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="menu-list-item reveal" data-item-id="tiffin-podi-dosa" data-category="tiffin" data-name="mylapore filter kaapi podi dosa" data-price="130">
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <span class="indicator-dot veg" title="Vegetarian"></span>
+                            <h4 class="menu-item-title">Mylapore Filter Kaapi Podi Dosa</h4>
+                            <span class="menu-item-leader"></span>
+                            <span class="menu-item-price">₹130</span>
+                        </div>
+                        <p class="menu-item-desc">Crispy dosa generously dusted with our signature house-made spicy roasted lentil powder (milagai podi) and oil.</p>
+                    </div>
+                    <div class="menu-item-actions">
+                        <div class="spicy-rating">
+                            <span>Spicy</span>
+                            <i class="fa-solid fa-pepper-hot"></i>
+                            <i class="fa-solid fa-pepper-hot"></i>
+                        </div>
+                        <button class="add-to-cart-btn-list" aria-label="Add to Order" onclick="addToCart('tiffin-podi-dosa', 'Mylapore Filter Kaapi Podi Dosa', 130)">
+                            Add <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="menu-list-item reveal" data-item-id="tiffin-vada" data-category="tiffin" data-name="medhu vada" data-price="70">
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <span class="indicator-dot veg" title="Vegetarian"></span>
+                            <h4 class="menu-item-title">Medhu Vada (2 pcs)</h4>
+                            <span class="menu-item-leader"></span>
+                            <span class="menu-item-price">₹70</span>
+                        </div>
+                        <p class="menu-item-desc">Crispy, golden-fried savory donuts made from soaked urad dal batter with black peppercorn and ginger.</p>
+                    </div>
+                    <div class="menu-item-actions">
+                        <div class="spicy-rating">
+                            <span>Mild</span>
+                            <i class="fa-solid fa-pepper-hot"></i>
+                        </div>
+                        <button class="add-to-cart-btn-list" aria-label="Add to Order" onclick="addToCart('tiffin-vada', 'Medhu Vada (2 pcs)', 70)">
+                            Add <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="menu-list-item reveal" data-item-id="tiffin-kothu-veg" data-category="tiffin" data-name="veg kothu parotta" data-price="150">
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <span class="indicator-dot veg" title="Vegetarian"></span>
+                            <h4 class="menu-item-title">Veg Kothu Parotta</h4>
+                            <span class="menu-item-leader"></span>
+                            <span class="menu-item-price">₹150</span>
+                        </div>
+                        <p class="menu-item-desc">Flaky parotta shredded and minced on a scorching flat-top griddle with spices, onions, tomatoes and mixed vegetables.</p>
+                    </div>
+                    <div class="menu-item-actions">
+                        <div class="spicy-rating">
+                            <span>Spicy</span>
+                            <i class="fa-solid fa-pepper-hot"></i>
+                            <i class="fa-solid fa-pepper-hot"></i>
+                        </div>
+                        <button class="add-to-cart-btn-list" aria-label="Add to Order" onclick="addToCart('tiffin-kothu-veg', 'Veg Kothu Parotta', 150)">
+                            Add <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="menu-list-item reveal" data-item-id="tiffin-kothu-egg" data-category="tiffin" data-name="egg kothu parotta" data-price="180">
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <span class="indicator-dot nonveg" title="Non-Vegetarian"></span>
+                            <h4 class="menu-item-title">Egg Kothu Parotta</h4>
+                            <span class="menu-item-leader"></span>
+                            <span class="menu-item-price">₹180</span>
+                        </div>
+                        <p class="menu-item-desc">Shredded flaky parotta stir-fried on iron hotplate with scrambled egg, spices, and chicken salna.</p>
+                    </div>
+                    <div class="menu-item-actions">
+                        <div class="spicy-rating">
+                            <span>Spicy</span>
+                            <i class="fa-solid fa-pepper-hot"></i>
+                            <i class="fa-solid fa-pepper-hot"></i>
+                        </div>
+                        <button class="add-to-cart-btn-list" aria-label="Add to Order" onclick="addToCart('tiffin-kothu-egg', 'Egg Kothu Parotta', 180)">
+                            Add <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="menu-list-item reveal" data-item-id="tiffin-kothu-chicken" data-category="tiffin" data-name="chicken kothu parotta" data-price="220">
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <span class="indicator-dot nonveg" title="Non-Vegetarian"></span>
+                            <h4 class="menu-item-title">Chicken Kothu Parotta</h4>
+                            <span class="menu-item-leader"></span>
+                            <span class="menu-item-price">₹220</span>
+                        </div>
+                        <p class="menu-item-desc">Shredded flaky parotta stir-fried on iron hotplate with scrambled egg, shredded chicken, and spicy chicken salna.</p>
+                    </div>
+                    <div class="menu-item-actions">
+                        <div class="spicy-rating">
+                            <span>Spicy</span>
+                            <i class="fa-solid fa-pepper-hot"></i>
+                            <i class="fa-solid fa-pepper-hot"></i>
+                            <i class="fa-solid fa-pepper-hot"></i>
+                        </div>
+                        <button class="add-to-cart-btn-list" aria-label="Add to Order" onclick="addToCart('tiffin-kothu-chicken', 'Chicken Kothu Parotta', 220)">
+                            Add <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="menu-list-item reveal" data-item-id="tiffin-kothu-mutton" data-category="tiffin" data-name="mutton kothu parotta" data-price="250">
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <span class="indicator-dot nonveg" title="Non-Vegetarian"></span>
+                            <h4 class="menu-item-title">Mutton Kothu Parotta</h4>
+                            <span class="menu-item-leader"></span>
+                            <span class="menu-item-price">₹250</span>
+                        </div>
+                        <p class="menu-item-desc">Premium minced parotta hammered on the griddle with eggs, shredded tender mutton, onions, and mutton gravy.</p>
+                    </div>
+                    <div class="menu-item-actions">
+                        <div class="spicy-rating">
+                            <span>Spicy</span>
+                            <i class="fa-solid fa-pepper-hot"></i>
+                            <i class="fa-solid fa-pepper-hot"></i>
+                            <i class="fa-solid fa-pepper-hot"></i>
+                        </div>
+                        <button class="add-to-cart-btn-list" aria-label="Add to Order" onclick="addToCart('tiffin-kothu-mutton', 'Mutton Kothu Parotta', 250)">
+                            Add <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- --- MAIN COURSE --- -->
+                <div class="menu-list-item reveal" data-item-id="main-meen-kuzhambu" data-category="mains" data-name="madras meen kuzhambu" data-price="320">
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <span class="indicator-dot nonveg" title="Non-Vegetarian"></span>
+                            <h4 class="menu-item-title">Madras Meen Kuzhambu</h4>
+                            <span class="menu-item-leader"></span>
+                            <span class="menu-item-price">₹320</span>
+                        </div>
+                        <p class="menu-item-desc">Tangy and spicy Seer fish (Vanjaram) steaks simmered in a clay pot tamarind and tomato gravy with mustard and fenugreek.</p>
+                    </div>
+                    <div class="menu-item-actions">
+                        <div class="spicy-rating">
+                            <span>Very Spicy</span>
+                            <i class="fa-solid fa-pepper-hot"></i>
+                            <i class="fa-solid fa-pepper-hot"></i>
+                            <i class="fa-solid fa-pepper-hot"></i>
+                        </div>
+                        <button class="add-to-cart-btn-list" aria-label="Add to Order" onclick="addToCart('main-meen-kuzhambu', 'Madras Meen Kuzhambu', 320)">
+                            Add <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="menu-list-item reveal" data-item-id="main-chettinad-kozhi" data-category="mains" data-name="chettinad kozhi chicken curry" data-price="260">
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <span class="indicator-dot nonveg" title="Non-Vegetarian"></span>
+                            <h4 class="menu-item-title">Chettinad Kozhi (Chicken) Curry</h4>
+                            <span class="menu-item-leader"></span>
+                            <span class="menu-item-price">₹260</span>
+                        </div>
+                        <p class="menu-item-desc">Bone-in chicken slow-cooked with fresh-roasted coconut paste, coriander, fennel, cloves, cardamom, and black pepper.</p>
+                    </div>
+                    <div class="menu-item-actions">
+                        <div class="spicy-rating">
+                            <span>Spicy</span>
+                            <i class="fa-solid fa-pepper-hot"></i>
+                            <i class="fa-solid fa-pepper-hot"></i>
+                            <i class="fa-solid fa-pepper-hot"></i>
+                        </div>
+                        <button class="add-to-cart-btn-list" aria-label="Add to Order" onclick="addToCart('main-chettinad-kozhi', 'Chettinad Kozhi (Chicken) Curry', 260)">
+                            Add <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="menu-list-item reveal" data-item-id="main-mutton-chukka" data-category="mains" data-name="mutton chukka varuval" data-price="340">
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <span class="indicator-dot nonveg" title="Non-Vegetarian"></span>
+                            <h4 class="menu-item-title">Mutton Chukka Varuval</h4>
+                            <span class="menu-item-leader"></span>
+                            <span class="menu-item-price">₹340</span>
+                        </div>
+                        <p class="menu-item-desc">Tender mutton pieces dry-roasted with pearl onions, garlic, green chilies, and crushed black peppercorns.</p>
+                    </div>
+                    <div class="menu-item-actions">
+                        <div class="spicy-rating">
+                            <span>Spicy</span>
+                            <i class="fa-solid fa-pepper-hot"></i>
+                            <i class="fa-solid fa-pepper-hot"></i>
+                            <i class="fa-solid fa-pepper-hot"></i>
+                        </div>
+                        <button class="add-to-cart-btn-list" aria-label="Add to Order" onclick="addToCart('main-mutton-chukka', 'Mutton Chukka Varuval', 340)">
+                            Add <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="menu-list-item reveal" data-item-id="main-ennai-kathirikkai" data-category="mains" data-name="ennai kathirikkai" data-price="190">
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <span class="indicator-dot veg" title="Vegetarian"></span>
+                            <h4 class="menu-item-title">Ennai Kathirikkai</h4>
+                            <span class="menu-item-leader"></span>
+                            <span class="menu-item-price">₹190</span>
+                        </div>
+                        <p class="menu-item-desc">Baby eggplants stuffed with a peanut-sesame spice blend, cooked in a tangy tamarind gravy.</p>
+                    </div>
+                    <div class="menu-item-actions">
+                        <div class="spicy-rating">
+                            <span>Spicy</span>
+                            <i class="fa-solid fa-pepper-hot"></i>
+                            <i class="fa-solid fa-pepper-hot"></i>
+                        </div>
+                        <button class="add-to-cart-btn-list" aria-label="Add to Order" onclick="addToCart('main-ennai-kathirikkai', 'Ennai Kathirikkai', 190)">
+                            Add <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="menu-list-item reveal" data-item-id="main-mushroom-kurma" data-category="mains" data-name="mushroom kalpasi kurma" data-price="210">
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <span class="indicator-dot veg" title="Vegetarian"></span>
+                            <h4 class="menu-item-title">Mushroom Kalpasi Kurma</h4>
+                            <span class="menu-item-leader"></span>
+                            <span class="menu-item-price">₹210</span>
+                        </div>
+                        <p class="menu-item-desc">Button mushrooms simmered in a coconut-cashew base spiced with black stone flower.</p>
+                    </div>
+                    <div class="menu-item-actions">
+                        <div class="spicy-rating">
+                            <span>Mild</span>
+                            <i class="fa-solid fa-pepper-hot"></i>
+                        </div>
+                        <button class="add-to-cart-btn-list" aria-label="Add to Order" onclick="addToCart('main-mushroom-kurma', 'Mushroom Kalpasi Kurma', 210)">
+                            Add <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- --- RICE & BREADS --- -->
+                <div class="menu-list-item reveal" data-item-id="rice-biryani" data-category="rice" data-name="ambur star mutton biryani" data-price="350">
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <span class="indicator-dot nonveg" title="Non-Vegetarian"></span>
+                            <h4 class="menu-item-title">Ambur Star Mutton Biryani</h4>
+                            <span class="menu-item-leader"></span>
+                            <span class="menu-item-price">₹350</span>
+                        </div>
+                        <p class="menu-item-desc">Seeraga Samba rice cooked with tender mutton and mild spices, served with raita and brinjal curry.</p>
+                    </div>
+                    <div class="menu-item-actions">
+                        <div class="spicy-rating">
+                            <span>Spicy</span>
+                            <i class="fa-solid fa-pepper-hot"></i>
+                            <i class="fa-solid fa-pepper-hot"></i>
+                        </div>
+                        <button class="add-to-cart-btn-list" aria-label="Add to Order" onclick="addToCart('rice-biryani', 'Ambur Star Mutton Biryani', 350)">
+                            Add <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="menu-list-item reveal" data-item-id="rice-meals" data-category="rice" data-name="traditional south indian meals thali" data-price="250">
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <span class="indicator-dot veg" title="Vegetarian"></span>
+                            <h4 class="menu-item-title">Traditional South Indian Meals (Thali)</h4>
+                            <span class="menu-item-leader"></span>
+                            <span class="menu-item-price">₹250</span>
+                        </div>
+                        <p class="menu-item-desc">Unlimited Ponni rice served on a banana leaf with Sambar, Vatha Kuzhambu, Rasam, Kootu, Poriyal, Appalam, Curd, and Pickle.</p>
+                    </div>
+                    <div class="menu-item-actions">
+                        <div class="spicy-rating">
+                            <span>Spicy</span>
+                            <i class="fa-solid fa-pepper-hot"></i>
+                            <i class="fa-solid fa-pepper-hot"></i>
+                        </div>
+                        <button class="add-to-cart-btn-list" aria-label="Add to Order" onclick="addToCart('rice-meals', 'Traditional South Indian Meals (Thali)', 250)">
+                            Add <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="menu-list-item reveal" data-item-id="rice-nool-parotta" data-category="rice" data-name="nool parotta" data-price="90">
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <span class="indicator-dot veg" title="Vegetarian"></span>
+                            <h4 class="menu-item-title">Nool Parotta (2 pcs)</h4>
+                            <span class="menu-item-leader"></span>
+                            <span class="menu-item-price">₹90</span>
+                        </div>
+                        <p class="menu-item-desc">Soft, flaky, multi-layered bread. Excellent when paired with Chettinad chicken or mutton gravy.</p>
+                    </div>
+                    <div class="menu-item-actions">
+                        <div class="spicy-rating">
+                            <span>Mild</span>
+                            <i class="fa-solid fa-pepper-hot"></i>
+                        </div>
+                        <button class="add-to-cart-btn-list" aria-label="Add to Order" onclick="addToCart('rice-nool-parotta', 'Nool Parotta (2 pcs)', 90)">
+                            Add <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="menu-list-item reveal" data-item-id="rice-kal-dosa" data-category="rice" data-name="kal dosa" data-price="80">
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <span class="indicator-dot veg" title="Vegetarian"></span>
+                            <h4 class="menu-item-title">Kal Dosa (2 pcs)</h4>
+                            <span class="menu-item-leader"></span>
+                            <span class="menu-item-price">₹80</span>
+                        </div>
+                        <p class="menu-item-desc">Soft, spongy dosas perfectly paired with spicy fish and lamb gravies.</p>
+                    </div>
+                    <div class="menu-item-actions">
+                        <div class="spicy-rating">
+                            <span>Mild</span>
+                            <i class="fa-solid fa-pepper-hot"></i>
+                        </div>
+                        <button class="add-to-cart-btn-list" aria-label="Add to Order" onclick="addToCart('rice-kal-dosa', 'Kal Dosa (2 pcs)', 80)">
+                            Add <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- --- DESSERTS --- -->
+                <div class="menu-list-item reveal" data-item-id="dessert-jigarthanda" data-category="desserts" data-name="madurai jigarthanda" data-price="140">
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <span class="indicator-dot veg" title="Vegetarian"></span>
+                            <h4 class="menu-item-title">Madurai Jigarthanda</h4>
+                            <span class="menu-item-leader"></span>
+                            <span class="menu-item-price">₹140</span>
+                        </div>
+                        <p class="menu-item-desc">A cooling dessert drink made with almond gum, nannari syrup, milk, and vanilla ice cream.</p>
+                    </div>
+                    <div class="menu-item-actions">
+                        <div class="spicy-rating">
+                            <span>Sweet</span>
+                            <i class="fa-solid fa-ice-cream" style="color:var(--secondary)"></i>
+                        </div>
+                        <button class="add-to-cart-btn-list" aria-label="Add to Order" onclick="addToCart('dessert-jigarthanda', 'Madurai Jigarthanda', 140)">
+                            Add <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="menu-list-item reveal" data-item-id="dessert-halwa" data-category="desserts" data-name="asoka halwa" data-price="120">
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <span class="indicator-dot veg" title="Vegetarian"></span>
+                            <h4 class="menu-item-title">Asoka Halwa</h4>
+                            <span class="menu-item-leader"></span>
+                            <span class="menu-item-price">₹120</span>
+                        </div>
+                        <p class="menu-item-desc">A rich, glossy sweet made from moong dal, ghee, and roasted wheat flour.</p>
+                    </div>
+                    <div class="menu-item-actions">
+                        <div class="spicy-rating">
+                            <span>Sweet</span>
+                            <i class="fa-solid fa-candy-cane" style="color:var(--secondary)"></i>
+                        </div>
+                        <button class="add-to-cart-btn-list" aria-label="Add to Order" onclick="addToCart('dessert-halwa', 'Asoka Halwa', 120)">
+                            Add <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="menu-list-item reveal" data-item-id="dessert-payasam" data-category="desserts" data-name="elaneer payasam" data-price="130">
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <span class="indicator-dot veg" title="Vegetarian"></span>
+                            <h4 class="menu-item-title">Elaneer Payasam</h4>
+                            <span class="menu-item-leader"></span>
+                            <span class="menu-item-price">₹130</span>
+                        </div>
+                        <p class="menu-item-desc">A light, refreshing kheer made with tender coconut water, coconut pulp, and milk.</p>
+                    </div>
+                    <div class="menu-item-actions">
+                        <div class="spicy-rating">
+                            <span>Sweet</span>
+                            <i class="fa-solid fa-stroopwafel" style="color:var(--secondary)"></i>
+                        </div>
+                        <button class="add-to-cart-btn-list" aria-label="Add to Order" onclick="addToCart('dessert-payasam', 'Elaneer Payasam', 130)">
+                            Add <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- --- BEVERAGES --- -->
+                <div class="menu-list-item reveal" data-item-id="beverage-coffee" data-category="beverages" data-name="degree filter coffee" data-price="50">
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <span class="indicator-dot veg" title="Vegetarian"></span>
+                            <h4 class="menu-item-title">Degree Filter Coffee</h4>
+                            <span class="menu-item-leader"></span>
+                            <span class="menu-item-price">₹50</span>
+                        </div>
+                        <p class="menu-item-desc">Strong, frothy traditional coffee brewed in a brass filter and served in a dabara set.</p>
+                    </div>
+                    <div class="menu-item-actions">
+                        <div class="spicy-rating">
+                            <span>Frothy</span>
+                            <i class="fa-solid fa-mug-hot" style="color:var(--primary)"></i>
+                        </div>
+                        <button class="add-to-cart-btn-list" aria-label="Add to Order" onclick="addToCart('beverage-coffee', 'Degree Filter Coffee', 50)">
+                            Add <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="menu-list-item reveal" data-item-id="beverage-rose" data-category="beverages" data-name="rose milk" data-price="70">
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <span class="indicator-dot veg" title="Vegetarian"></span>
+                            <h4 class="menu-item-title">Rose Milk</h4>
+                            <span class="menu-item-leader"></span>
+                            <span class="menu-item-price">₹70</span>
+                        </div>
+                        <p class="menu-item-desc">Chilled fresh milk flavored with sweet, nostalgic rose syrup.</p>
+                    </div>
+                    <div class="menu-item-actions">
+                        <div class="spicy-rating">
+                            <span>Chilled</span>
+                            <i class="fa-solid fa-glass-water-droplet" style="color:#F1948A"></i>
+                        </div>
+                        <button class="add-to-cart-btn-list" aria-label="Add to Order" onclick="addToCart('beverage-rose', 'Rose Milk', 70)">
+                            Add <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="menu-list-item reveal" data-item-id="beverage-mor" data-category="beverages" data-name="neer mor spiced buttermilk" data-price="60">
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <span class="indicator-dot veg" title="Vegetarian"></span>
+                            <h4 class="menu-item-title">Neer Mor</h4>
+                            <span class="menu-item-leader"></span>
+                            <span class="menu-item-price">₹60</span>
+                        </div>
+                        <p class="menu-item-desc">Spiced, churned buttermilk tempered with ginger, green chilies, and fresh coriander.</p>
+                    </div>
+                    <div class="menu-item-actions">
+                        <div class="spicy-rating">
+                            <span>Coolant</span>
+                            <i class="fa-solid fa-glass-water" style="color:#2D6A4F"></i>
+                        </div>
+                        <button class="add-to-cart-btn-list" aria-label="Add to Order" onclick="addToCart('beverage-mor', 'Neer Mor', 60)">
+                            Add <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="menu-list-item reveal" data-item-id="beverage-sarbath" data-category="beverages" data-name="nannari sarbath" data-price="80">
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <span class="indicator-dot veg" title="Vegetarian"></span>
+                            <h4 class="menu-item-title">Nannari Sarbath</h4>
+                            <span class="menu-item-leader"></span>
+                            <span class="menu-item-price">₹80</span>
+                        </div>
+                        <p class="menu-item-desc">A natural coolant made from sarsaparilla root syrup and a squeeze of fresh lime.</p>
+                    </div>
+                    <div class="menu-item-actions">
+                        <div class="spicy-rating">
+                            <span>Coolant</span>
+                            <i class="fa-solid fa-lemon" style="color:var(--secondary)"></i>
+                        </div>
+                        <button class="add-to-cart-btn-list" aria-label="Add to Order" onclick="addToCart('beverage-sarbath', 'Nannari Sarbath', 80)">
+                            Add <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Loved by Foodies</h2>
+                <p>Don't just take our word for it. Here is what diners say about our classic Chennai tiffins and slow-cooked curries.</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card reveal">
+                    <span class="testimonial-quote">“</span>
+                    <p class="testimonial-text">"The Ghee Roast Dosa was incredibly thin, golden, and crispy! It immediately reminded me of the tiffin shops in Mylapore. And the Degree Coffee is easily the best in town—perfectly frothy!"</p>
+                    <div class="testimonial-user">
+                        <div class="user-avatar">KK</div>
+                        <div class="user-info">
+                            <h4>Karthik Raja</h4>
+                            <p>Verified Diner • Chennai</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card reveal">
+                    <span class="testimonial-quote">“</span>
+                    <p class="testimonial-text">"I ordered the Madras Meen Kuzhambu and the Nool Parotta. The fish curry was tangy, spicy, and cooked perfectly. Steaming fish curry soaked in parotta layers is absolute heaven."</p>
+                    <div class="testimonial-user">
+                        <div class="user-avatar">PK</div>
+                        <div class="user-info">
+                            <h4>Priya Krishnan</h4>
+                            <p>Food Blogger • Bangalore</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card reveal">
+                    <span class="testimonial-quote">“</span>
+                    <p class="testimonial-text">"The Chicken 65 is crispy on the outside, succulent on the inside and packed with authentic spices. Paired with their Ambur Star Mutton Biryani, it's a Sunday feast done right!"</p>
+                    <div class="testimonial-user">
+                        <div class="user-avatar">AR</div>
+                        <div class="user-info">
+                            <h4>Anand Raghavan</h4>
+                            <p>Local Guide • Mylapore</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT & TIMINGS SECTION -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Visit Our Kitchen</h2>
+                <p>Come join us for a hot cup of filter coffee and tiffin or order fresh curries to your doorstep.</p>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Map / Info -->
+                <div class="contact-info reveal reveal-left">
+                    <h3>Contact Information</h3>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-item-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div class="contact-item-text">
+                                <h4>Find Us</h4>
+                                <p>42, South Mada Street,<br>Mylapore, Chennai - 600004<br>Tamil Nadu, India</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-item-icon"><i class="fa-solid fa-clock"></i></div>
+                            <div class="contact-item-text">
+                                <h4>Timings</h4>
+                                <p>Open Daily<br>Breakfast: 7:00 AM - 11:30 AM<br>Lunch & Dinner: 12:00 PM - 11:00 PM</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-item-icon"><i class="fa-solid fa-phone"></i></div>
+                            <div class="contact-item-text">
+                                <h4>Call Us</h4>
+                                <p>+91 44 2495 9999<br>+91 98840 12345</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-item-icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div class="contact-item-text">
+                                <h4>Email Us</h4>
+                                <p>vanakkam@nammachennaikitchen.com<br>info@nammachennaikitchen.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Simple feedback reservation form -->
+                <div class="contact-form-wrapper reveal reveal-right">
+                    <form class="contact-form" id="restaurant-contact-form" onsubmit="event.preventDefault(); showSuccessModal('feedback');">
+                        <div class="form-group">
+                            <label for="form-name">Name</label>
+                            <input type="text" id="form-name" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-phone">Phone Number</label>
+                            <input type="tel" id="form-phone" placeholder="Enter phone number" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-message">Feedback / Table Inquiry</label>
+                            <textarea id="form-message" rows="4" placeholder="Tell us how we can help you..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <a href="#" class="footer-logo">
+                🌴 Namma Chennai <span>Kitchen</span>
+            </a>
+            <ul class="footer-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">Story</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="social-links">
+                <a href="#" class="social-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" class="social-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="social-btn" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+            <p class="copyright">
+                &copy; 2026 Namma Chennai Kitchen. All Rights Reserved. Made with love for Madras flavor.
+            </p>
+        </div>
+    </footer>
+
+    <!-- CART SIDE DRAWER PANEL -->
+    <div class="cart-drawer-backdrop" id="cart-backdrop"></div>
+    <div class="cart-drawer" id="cart-drawer">
+        <div class="cart-header">
+            <h3>Your Order</h3>
+            <button class="cart-close-btn" id="cart-close-btn" aria-label="Close Cart">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        
+        <div class="cart-items-container" id="cart-items-container">
+            <!-- Dynamic items loaded here -->
+            <div class="cart-empty-message" id="cart-empty-msg">
+                <i class="fa-solid fa-basket-shopping"></i>
+                <p>Your order basket is empty.<br>Add some delicious tiffin and curries!</p>
+            </div>
+        </div>
+
+        <div class="cart-footer">
+            <div class="cart-summary-row">
+                <span>Subtotal</span>
+                <span id="cart-subtotal">₹0</span>
+            </div>
+            <div class="cart-summary-row">
+                <span>GST (5%)</span>
+                <span id="cart-tax">₹0</span>
+            </div>
+            <div class="cart-summary-row total">
+                <span>Total Amount</span>
+                <span id="cart-total">₹0</span>
+            </div>
+            <button class="cart-checkout-btn" id="checkout-btn" disabled onclick="checkoutOrder()">
+                Place Order <i class="fa-solid fa-circle-check" style="margin-left:5px"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- ORDER SUCCESS MODAL -->
+    <div class="modal-backdrop" id="success-modal-backdrop">
+        <div class="success-modal">
+            <div class="success-icon-wrapper" id="success-modal-icon">
+                <i class="fa-solid fa-check"></i>
+            </div>
+            <h3 id="success-modal-title">Order Placed!</h3>
+            <p id="success-modal-desc">Thank you for ordering from Namma Chennai Kitchen! Your piping hot tiffin will be delivered shortly.</p>
+            <button class="btn btn-primary" onclick="closeSuccessModal()">Close</button>
+        </div>
+    </div>
+
+    <!-- Main JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>
